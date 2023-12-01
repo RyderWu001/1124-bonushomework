@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格</title>
+  <style>
+    textarea {
+  resize: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px; /* Add this line for rounded corners */
+  background-color: #f2f2f2; /* Add this line for background color */
+  margin:  auto; /* Center the textarea horizontally */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e6e6e6; /* Set your desired background color */
+}
+
+    .container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2%;
+    }
+
+    .row label,
+    .row input,
+    .row textarea {
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .row input {
+      width: 100%;
+    }
+
+    .half-width {
+      width: 48%;
+    }
+
+    .bottom-image {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .bottom-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Updated styles for textarea */
+    textarea {
+      resize: none; /* Make the textarea not resizable */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Bonus HW</h1>
+    
+    <div class="row">
+      <p>input  </p>
+      <input type="text" id="title1" placeholder="輸入格">
+    </div>
+    
+    <div class="row">
+      <p>input2  </p>
+      <input type="text" id="title2" class="half-width" placeholder="輸入格">
+      <p>input3</p>
+      <input type="text" id="title3" class="half-width" placeholder="輸入格">
+    </div>
+    
+    <div class="row">
+      <p>input4  </p>
+      <input type="text" id="title4" placeholder="輸入格">
+    </div>
+    
+    <label for="w3review">textarea</label>
+    <textarea id="w3review" name="w3review" rows="7" cols="65"></textarea>
+
+    <div class="bottom-image">
+      <img src="https://www.ali-nsa.net/content/images/static/unit-sunrise-md.jpg" alt="Description of the image">
+    </div>
+  </div>
+
+</body>
+</html>
